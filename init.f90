@@ -1,4 +1,4 @@
-module init
+module init! test
 use vars
 use imsl
 use subs
@@ -7,7 +7,7 @@ contains
 
 subroutine init_data()
 	call allocate_number()
-	call position_init()                             !ÓÃansys¶ÁÈ¡¸öÊı¾İ Á½¸ö°ëÇòmeshºó½Úµã,Ä¿Ç°ÏÈÓÃÁ½¸öÆ½Ãæ°Ğ¿´¿´
+	call position_init()                             !ç”¨ansysè¯»å–ä¸ªæ•°æ® ä¸¤ä¸ªåŠçƒmeshåèŠ‚ç‚¹,ç›®å‰å…ˆç”¨ä¸¤ä¸ªå¹³é¢é¶çœ‹çœ‹
     call velocity_init()
 	call density_init()
 	call pressure_e_init()
@@ -81,7 +81,7 @@ end subroutine allocate_number
 
 
     
-subroutine position_init()                   !Á½¿é¾ØĞÎ°Ğ°å£¬³ß´çÎª1*1£¬ÖĞĞÄÎ»ÖÃÎª(0.5,0.5) and (3.5,0.5)
+subroutine position_init()                   !ä¸¤å—çŸ©å½¢é¶æ¿ï¼Œå°ºå¯¸ä¸º1*1ï¼Œä¸­å¿ƒä½ç½®ä¸º(0.5,0.5) and (3.5,0.5)
 	integer::i,j
 
 	L_x_1=0.0
