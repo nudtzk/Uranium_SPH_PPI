@@ -3,8 +3,8 @@ use vars
 use imsl
 implicit none
 contains
-
-	subroutine density()                      !page114页 连续性密度方程
+asd
+	subroutine density()                      !page114脪鲁 脕卢脨酶脨脭脙脺露脠路陆鲁脤
 		integer::i,j
 		real::d_rho
 		real::rv(2)
